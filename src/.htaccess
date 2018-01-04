@@ -1,0 +1,9 @@
+AuthType Basic 
+AuthName "Mitarbeiter-Login"
+AuthUserFile /var/www/app/html/.htpasswd
+Order allow,deny
+Allow from 192.168.1. loehers.no-ip.org zeit.loehers.de
+Deny from 192.168.1.1
+Require valid-user
+Satisfy any
+php_flag register_globals on
